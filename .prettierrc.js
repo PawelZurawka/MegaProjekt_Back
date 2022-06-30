@@ -5,6 +5,7 @@ module.exports = {
   singleQuote: true,
   jsxBracketSameLine: true,
   jsxSingleQuote: false,
+  tsxSingleQuote: false,
   arrowParens: 'avoid',
   printWidth: 140,
   singleAttributePerLine: true,
