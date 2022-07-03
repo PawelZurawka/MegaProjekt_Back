@@ -2,7 +2,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
+# Don't track content of these folders
 /.history
+
+# Don't track content of these files
+config/config.ts
 
 ### Node ###
 # Logs
