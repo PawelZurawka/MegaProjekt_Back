@@ -1,6 +1,6 @@
 import { Router } from 'express';
+import { Post } from '../models/post.model';
 
-export const postRouter = Router()
-	.get('/first',  (req, res) => {
-		res.json('<h1>Test</h1>');
-	})
+export const postRouter = Router().get('/first', async (req, res) => {
+  res.json(await Post.find());
+});

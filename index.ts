@@ -5,6 +5,7 @@ import { postRouter } from './routers/post.router';
 import cors from 'cors';
 import { config } from './config/config';
 import { handleError } from './utils/errors';
+import { runDb } from './utils/db';
 //@TODO add method override?
 
 const app = express();
@@ -25,6 +26,8 @@ app.use(
 
 app.use('/', postRouter);
 
+app.use(runDb);
+
 app.use(handleError);
 
-app.listen(3001, '0.0.0.0', () => console.log('Server started on port http://localhost:3001'));
+app.listen(3001, '0.0.0.0', () => console.log(`Server started on port http://localhost:${config.PORT}`));
