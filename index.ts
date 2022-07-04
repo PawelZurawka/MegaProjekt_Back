@@ -2,17 +2,17 @@ import express, { json } from 'express';
 import 'express-async-errors';
 import rateLimit from 'express-rate-limit';
 import { postRouter } from './routers/post.router';
-// import cors from 'cors';
+import cors from 'cors';
+import { config } from './config/config';
 // import { handleError } from './utils/errors';
-// import { config } from './config/config';
 
 const app = express();
 
-// app.use(
-// 	cors({
-// 		origin: config.corsOrigin,
-// 	})
-// );
+app.use(
+  cors({
+    origin: config.corsOrigin,
+  })
+);
 app.use(json());
 
 app.use(

@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.example.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.example.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/first.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routers/post.router.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DYSK D\Programowanie\MegaK\Projekt zaliczeniowy\MegaProjekt_Back" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -80,7 +85,7 @@
       <workItem from="1656613881320" duration="167000" />
       <workItem from="1656614072426" duration="830000" />
       <workItem from="1656880578757" duration="1034000" />
-      <workItem from="1656928012658" duration="1459000" />
+      <workItem from="1656928012658" duration="2514000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -131,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656882699800</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add post controller and rename router.">
+      <created>1656937371840</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656937371840</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add post controller.">
+      <created>1656937384001</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656937384001</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +175,9 @@
     <MESSAGE value="Add config file to gitignore." />
     <MESSAGE value="Add example config file." />
     <MESSAGE value="Add mongoose to dependencies." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add mongoose to dependencies." />
+    <MESSAGE value="Add post controller and rename router." />
+    <MESSAGE value="Add post controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add post controller." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
