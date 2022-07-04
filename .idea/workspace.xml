@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
+    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Add handle Error.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/post.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <workItem from="1656613881320" duration="167000" />
       <workItem from="1656614072426" duration="830000" />
       <workItem from="1656880578757" duration="1034000" />
-      <workItem from="1656928012658" duration="3305000" />
+      <workItem from="1656928012658" duration="6059000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -156,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656940635617</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add handle Error.">
+      <created>1656942234137</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656942234137</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +191,8 @@
     <MESSAGE value="Add post controller and rename router." />
     <MESSAGE value="Add post controller." />
     <MESSAGE value="Add cors origin." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add cors origin." />
+    <MESSAGE value="Add handle Error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add handle Error." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
