@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/first.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routers/post.router.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,8 @@
       <workItem from="1656600010614" duration="3850000" />
       <workItem from="1656613881320" duration="167000" />
       <workItem from="1656614072426" duration="830000" />
-      <workItem from="1656880578757" duration="39000" />
+      <workItem from="1656880578757" duration="1034000" />
+      <workItem from="1656928012658" duration="1459000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -107,7 +110,28 @@
       <option name="project" value="LOCAL" />
       <updated>1656609612046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add config file to gitignore.">
+      <created>1656880647908</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656880647908</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add example config file.">
+      <created>1656880714800</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656880714800</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add mongoose to dependencies.">
+      <created>1656882699800</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656882699800</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +153,10 @@
     <MESSAGE value="Add scripts and dependencies to package.json, gitignore, README and prettier config file." />
     <MESSAGE value="Add tsconfig file and first route for test server." />
     <MESSAGE value="Change in prettier config file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change in prettier config file." />
+    <MESSAGE value="Add config file to gitignore." />
+    <MESSAGE value="Add example config file." />
+    <MESSAGE value="Add mongoose to dependencies." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mongoose to dependencies." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

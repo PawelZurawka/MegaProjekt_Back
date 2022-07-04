@@ -1,7 +1,7 @@
 import express, { json } from 'express';
 import 'express-async-errors';
 import rateLimit from 'express-rate-limit';
-import { firstRouter } from './routers/first.router';
+import { postRouter } from './routers/post.router';
 // import cors from 'cors';
 // import { handleError } from './utils/errors';
 // import { config } from './config/config';
@@ -29,7 +29,7 @@ app.use(
   })
 );
 
-app.use('/', firstRouter);
+app.use('/', postRouter);
 
 // app.use(handleError);
 
