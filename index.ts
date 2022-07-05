@@ -24,10 +24,12 @@ app.use(
   })
 );
 
-app.use('/', postRouter);
+app.use('/api', postRouter);
 
 app.use(runDb);
 
 app.use(handleError);
 
-app.listen(3001, '0.0.0.0', () => console.log(`Server started on port http://localhost:${config.PORT}`));
+app.listen(config.server.port, '0.0.0.0', () =>
+  console.log(`Server started on port http://${config.server.hostname}:${config.server.port}`)
+);
