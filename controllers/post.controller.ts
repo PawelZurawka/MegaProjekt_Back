@@ -5,7 +5,7 @@ export const getSinglePost = async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
     const post = await Post.findById({ _id: id });
-    return res.json(post);
+    res.json(post);
   } catch (err) {
     res.status(404).json(`Post with id ${id} not found. Error message: ${err.message}`);
   }
@@ -33,7 +33,7 @@ export const addPost = async (req: Request, res: Response) => {
 export const getPostsByRange = async (req: Request, res: Response) => {
   const { startAt, limit } = req.params;
   try {
-    const posts = await Post.find({}).skip(parseInt(startAt)).limit(parseInt(limit));
+    const posts = await Post.find().skip(parseInt(startAt)).limit(parseInt(limit));
     const amount = await Post.countDocuments();
     res.status(200).json({ posts, amount });
   } catch (err) {
