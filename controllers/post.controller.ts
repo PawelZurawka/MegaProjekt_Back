@@ -6,7 +6,7 @@ export const getSinglePost = async (req: Request, res: Response) => {
     const post = await Post.findOne({ _id: req.params.id });
     return res.json(post);
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(404).json({ message: err.message });
   }
 };
 
@@ -15,7 +15,7 @@ export const getAllPosts = async (req: Request, res: Response) => {
     const posts = await Post.find().sort({ createdAt: -1 });
     res.json(posts);
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(404).json({ message: err.message });
   }
 };
 
@@ -43,7 +43,7 @@ export const getPostsByRange = async (req: Request, res: Response) => {
 export const deletePost = async (req: Request, res: Response) => {
   try {
     const post = await Post.findOneAndDelete({ _id: req.params.id });
-    res.send(`Document with ID: ${post._id} has been deleted.`);
+    res.status(200).send(`Document with ID: ${post._id} has been deleted.`);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
@@ -52,8 +52,8 @@ export const deletePost = async (req: Request, res: Response) => {
 export const editPost = async (req: Request, res: Response) => {
   try {
     const post = await Post.findOneAndUpdate({ id: req.query.id }, req.body, { new: true });
-    res.json(post);
+    res.status(200).json(post);
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(404).json({ message: err.message });
   }
 };
