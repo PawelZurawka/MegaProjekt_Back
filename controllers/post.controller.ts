@@ -42,9 +42,8 @@ export const getPostsByRange = async (req: Request, res: Response) => {
 
 export const deletePost = async (req: Request, res: Response) => {
   try {
-    const id = req.params.id;
-    const post = await Post.findOneAndDelete({ _id: id });
-    res.send(`Document with ID: ${post} has been deleted.`);
+    const post = await Post.findOneAndDelete({ _id: req.params.id });
+    res.send(`Document with ID: ${post._id} has been deleted.`);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
