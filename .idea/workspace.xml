@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
+    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Edit deletePost controller.Add min and max length to schema.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/post.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/post.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/post.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/post/post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/post/post.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1656928012658" duration="11678000" />
       <workItem from="1657013196692" duration="8022000" />
       <workItem from="1657038528071" duration="7454000" />
-      <workItem from="1657098954086" duration="12954000" />
+      <workItem from="1657098954086" duration="16020000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657112289720</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Edit deletePost controller.Add min and max length to schema.">
+      <created>1657114111297</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657114111297</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +259,8 @@
     <MESSAGE value="Move actions from routes to controller." />
     <MESSAGE value="Fix problem with controller. Add delete and patch methods." />
     <MESSAGE value="Add sort post from newest to oldest." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sort post from newest to oldest." />
+    <MESSAGE value="Edit deletePost controller.Add min and max length to schema." />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit deletePost controller.Add min and max length to schema." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
