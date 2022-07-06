@@ -9,8 +9,6 @@ import { connectDb } from './utils/db';
 
 const app = express();
 
-app.use(connectDb);
-
 app.use(
   cors({
     origin: config.corsOrigin,
@@ -26,6 +24,8 @@ app.use(
 );
 
 app.use('/api', postRouter);
+
+app.use(connectDb);
 
 app.use(handleError);
 
