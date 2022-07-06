@@ -6,6 +6,7 @@ import cors from 'cors';
 import { config } from './config/config';
 import { handleError } from './utils/errors';
 import { connectDb } from './utils/db';
+import { pageNotFoundRouter } from './routers/page-not-found.router';
 
 const app = express();
 
@@ -24,6 +25,8 @@ app.use(
 );
 
 app.use('/api', postRouter);
+
+app.use(pageNotFoundRouter);
 
 app.use(connectDb);
 
