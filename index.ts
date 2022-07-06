@@ -5,10 +5,11 @@ import { postRouter } from './routers/post.router';
 import cors from 'cors';
 import { config } from './config/config';
 import { handleError } from './utils/errors';
-import { runDb } from './utils/db';
-//@TODO add method override?
+import { connectDb } from './utils/db';
 
 const app = express();
+
+app.use(connectDb);
 
 app.use(
   cors({
@@ -26,10 +27,6 @@ app.use(
 
 app.use('/api', postRouter);
 
-app.use(runDb);
-
 app.use(handleError);
 
-app.listen(config.server.port, '0.0.0.0', () =>
-  console.log(`Server started on port http://${config.server.hostname}:${config.server.port}`)
-);
+app.listen(config.server.port, '0.0.0.0', () => console.log(`Server started on port ${config.server.hostname}:${config.server.port}`));

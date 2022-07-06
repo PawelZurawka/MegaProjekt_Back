@@ -1,9 +1,15 @@
 import { Router } from 'express';
-import { addPost, getAllPosts, getSinglePost } from '../controllers/post.controller';
+import { addPost, deletePost, editPost, getAllPosts, getPostsByRange, getSinglePost } from '../controllers/post.controller';
 
 export const postRouter = Router()
-  .get('/post', getSinglePost)
-
   .get('/posts', getAllPosts)
 
-  .post('/post', addPost);
+  .get('/posts/:id', getSinglePost)
+
+  .get('/posts/:startAt/:limit', getPostsByRange)
+
+  .post('/posts', addPost)
+
+  .patch('/posts/:id', editPost)
+
+  .delete('/posts/:id', deletePost);
