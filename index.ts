@@ -3,6 +3,7 @@ import 'express-async-errors';
 import rateLimit from 'express-rate-limit';
 import { postRouter } from './routers/post.router';
 import cors from 'cors';
+const path = require("path");
 import { config } from './config/config';
 import { handleError } from './utils/errors';
 import { connectDb } from './utils/db';
@@ -17,6 +18,8 @@ app.use(
 );
 app.use(json());
 
+app.use("/images", express.static(path.join(__dirname, "/images")));
+
 app.use(
   rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
@@ -24,7 +27,7 @@ app.use(
   })
 );
 
-app.use('/api', postRouter);
+app.use('/api/posts', postRouter);
 
 app.use(pageNotFoundRouter);
 

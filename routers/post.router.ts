@@ -2,14 +2,14 @@ import { Router } from 'express';
 import { addPost, deletePost, editPost, getAllPosts, getPostsByRange, getSinglePost } from '../controllers/post.controller';
 
 export const postRouter = Router()
-  .get('/posts', getAllPosts)
+  .get('/', getAllPosts)
 
-  .get('/posts/:id', getSinglePost)
+  .get('/:id', getSinglePost)
 
-  .get('/posts/:startAt/:limit', getPostsByRange)
+  .get('/:startAt/:limit', getPostsByRange)
 
-  .post('/posts', addPost)
+  .post('/', addPost)
 
-  .patch('/posts/:id', editPost)
+  .patch('/:id', editPost)
 
-  .delete('/posts/:id', deletePost);
+  .delete('/:id', deletePost);
