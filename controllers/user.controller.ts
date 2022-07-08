@@ -3,8 +3,16 @@ import { hash, genSalt } from 'bcrypt';
 import { User } from '../models/user.model';
 import { Post } from '../models/post.model';
 
-// router.put("/:id", async (req, res) => {
-// });
+export const getUser = async (req: Request, res: Response) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const { password, ...others } = user.toObject();
+    res.status(200).json(others);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+};
+
 export const updateUser = async (req: Request, res: Response) => {
   if (req.body.userId === req.params.id) {
     if (req.body.password) {
@@ -28,7 +36,6 @@ export const updateUser = async (req: Request, res: Response) => {
   }
 };
 
-// router.delete("/:id", async (req, res) => {
 export const deleteUser = async (req: Request, res: Response) => {
   if (req.body.userId === req.params.id) {
     try {
@@ -45,16 +52,5 @@ export const deleteUser = async (req: Request, res: Response) => {
     }
   } else {
     res.status(401).json('You can delete only your account!');
-  }
-};
-
-// router.get('/:id', async (req, res) => {
-export const getUser = async (req: Request, res: Response) => {
-  try {
-    const user = await User.findById(req.params.id);
-    const { password, ...others } = user.toObject();
-    res.status(200).json(others);
-  } catch (err) {
-    res.status(500).json(err);
   }
 };

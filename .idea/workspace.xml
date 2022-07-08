@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +137,7 @@
       <workItem from="1657189020481" duration="3321000" />
       <workItem from="1657212300322" duration="6206000" />
       <workItem from="1657220695839" duration="594000" />
-      <workItem from="1657285228739" duration="9844000" />
+      <workItem from="1657285228739" duration="11535000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -354,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657295020120</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add user controller.">
+      <created>1657295760075</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1657295760076</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +381,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add example config file." />
     <MESSAGE value="Add mongoose to dependencies." />
     <MESSAGE value="Add post controller and rename router." />
     <MESSAGE value="Add post controller." />
@@ -397,7 +405,8 @@
     <MESSAGE value="Add types multer,upload file router, types and logic.." />
     <MESSAGE value="Add types multer,upload file router, types and logic." />
     <MESSAGE value="Add authorization controller and router." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add authorization controller and router." />
+    <MESSAGE value="Add user controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add user controller." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -9,6 +9,7 @@ import { connectDb } from './utils/db';
 import { pageNotFoundRouter } from './routers/page-not-found.router';
 import { uploadFileRouter } from './routers/uploadFile.router';
 import { authRouter } from './routers/auth.router';
+import { userRouter } from './routers/user.router';
 
 const app = express();
 const router = Router();
@@ -33,6 +34,7 @@ app.use(
 router.use('/upload', uploadFileRouter);
 router.use('/posts', postRouter);
 router.use('/auth', authRouter);
+router.use('/users', userRouter);
 
 app.use('/api', router);
 
