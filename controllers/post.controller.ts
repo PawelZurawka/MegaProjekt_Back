@@ -2,31 +2,43 @@ import { Post } from '../models/post.model';
 import { Request, Response } from 'express';
 
 export const getSinglePost = async (req: Request, res: Response) => {
-  const { id } = req.params;
   try {
-    const post = await Post.findById({ _id: id });
+    const post = await Post.findById(req.params.id);
     res.json(post);
   } catch (err) {
-    res.status(404).json(`Post with id ${id} not found. Error message: ${err.message}`);
+    res.status(500).json(err);
   }
 };
 
 export const getAllPosts = async (req: Request, res: Response) => {
+  const username = req.query.user;
+  const categoryName = req.query.category;
   try {
-    const posts = await Post.find().sort({ createdAt: -1 });
-    res.json(posts);
+    let posts;
+    if (username) {
+      posts = await Post.find({ username });
+    } else if (categoryName) {
+      posts = await Post.find({
+        categories: {
+          $in: [categoryName],
+        },
+      });
+    } else {
+      posts = await Post.find();
+    }
+    res.status(200).json(posts);
   } catch (err) {
-    res.status(404).json(`Can not get all posts. Error message: ${err.message}`);
+    res.status(500).json(err);
   }
 };
 
 export const addPost = async (req: Request, res: Response) => {
+  const newPost = new Post(req.body);
   try {
-    const newPost = new Post(req.body);
-    const postSaved = await newPost.save();
-    res.status(201).json(postSaved);
+    const savedPost = await newPost.save();
+    res.status(201).json(savedPost);
   } catch (err) {
-    res.status(400).json(`Can not add post. Error message: ${err.message}`);
+    res.status(500).json(err);
   }
 };
 
@@ -37,26 +49,48 @@ export const getPostsByRange = async (req: Request, res: Response) => {
     const amount = await Post.countDocuments();
     res.status(200).json({ posts, amount });
   } catch (err) {
-    res.status(500).json(`Can not get posts by range. Error message: ${err.message}`);
+    res.status(500).json(err);
   }
 };
 
 export const deletePost = async (req: Request, res: Response) => {
-  const { id } = req.params;
   try {
-    const post = await Post.findOneAndDelete({ _id: id });
-    res.status(200).send(`Document with ID: ${post._id} has been deleted.`);
+    const post = await Post.findById(req.params.id);
+    if (post.username === req.body.username) {
+      try {
+        await post.delete();
+        res.status(200).json('Post has been deleted.');
+      } catch (err) {
+        res.status(500).json(err);
+      }
+    } else {
+      res.status(401).json('You can delete only your post!');
+    }
   } catch (err) {
-    res.status(500).json(`Can not delete post with ID: ${id} Error message: ${err.message}`);
+    res.status(500).json(err);
   }
 };
 
 export const editPost = async (req: Request, res: Response) => {
-  const { id } = req.params;
   try {
-    const post = await Post.findOneAndUpdate({ _id: id }, req.body, { new: true });
-    res.status(200).json(post);
+    const post = await Post.findById(req.params.id);
+    if (post.username === req.body.username) {
+      try {
+        const updatedPost = await Post.findByIdAndUpdate(
+          req.params.id,
+          {
+            $set: req.body,
+          },
+          { new: true }
+        );
+        res.status(200).json(updatedPost);
+      } catch (err) {
+        res.status(500).json(err);
+      }
+    } else {
+      res.status(401).json('You can update only your post!');
+    }
   } catch (err) {
-    res.status(404).json(`Can not edit post with ID: ${id} Error message: ${err.message}`);
+    res.status(500).json(err);
   }
 };

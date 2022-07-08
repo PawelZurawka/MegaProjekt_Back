@@ -10,6 +10,6 @@ export const postRouter = Router()
 
   .post('/', addPost)
 
-  .patch('/:id', editPost)
+  .put('/:id', editPost)
 
   .delete('/:id', deletePost);
