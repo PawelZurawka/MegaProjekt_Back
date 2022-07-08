@@ -22,7 +22,7 @@ app.use(
 );
 app.use(json());
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 // app.use('public/images', express.static(path.join(__dirname, 'public/images')));
 
 app.use(
