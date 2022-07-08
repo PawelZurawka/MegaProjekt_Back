@@ -3,7 +3,6 @@ import 'express-async-errors';
 import rateLimit from 'express-rate-limit';
 import { postRouter } from './routers/post.router';
 import cors from 'cors';
-const path = require('path');
 import { config } from './config/config';
 import { handleError } from './utils/errors';
 import { connectDb } from './utils/db';
@@ -19,7 +18,8 @@ app.use(
 );
 app.use(json());
 
-app.use('/images', express.static(path.join(__dirname, '/images')));
+app.use(express.static('public'));
+// app.use('public/images', express.static(path.join(__dirname, 'public/images')));
 
 app.use(
   rateLimit({

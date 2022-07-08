@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Add user and category models and interfaces.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Add types multer,upload file router, types and logic.">
+      <change afterPath="$PROJECT_DIR$/controllers/upload.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/uploadFile.router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/fileStorage/fileStorage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/fileStorage/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/fileStorage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +84,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DYSK D\Programowanie\MegaK\Projekt zaliczeniowy\MegaProjekt_Back\public" />
       <recent name="E:\DYSK D\Programowanie\MegaK\Projekt zaliczeniowy\MegaProjekt_Back" />
     </key>
   </component>
@@ -139,7 +141,7 @@
       <workItem from="1657189020481" duration="3321000" />
       <workItem from="1657212300322" duration="6206000" />
       <workItem from="1657220695839" duration="594000" />
-      <workItem from="1657285228739" duration="3291000" />
+      <workItem from="1657285228739" duration="4912000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -337,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657217574023</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Add types multer,upload file router, types and logic..">
+      <created>1657289020604</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1657289020604</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,8 +364,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add tsconfig file and first route for test server." />
-    <MESSAGE value="Change in prettier config file." />
     <MESSAGE value="Add config file to gitignore." />
     <MESSAGE value="Add example config file." />
     <MESSAGE value="Add mongoose to dependencies." />
@@ -380,7 +387,9 @@
     <MESSAGE value="Add multer package.Remove uuid package." />
     <MESSAGE value="Change server config, post router. Add images folder." />
     <MESSAGE value="Add user and category models and interfaces." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user and category models and interfaces." />
+    <MESSAGE value="Add types multer,upload file router, types and logic.." />
+    <MESSAGE value="Add types multer,upload file router, types and logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add types multer,upload file router, types and logic." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
