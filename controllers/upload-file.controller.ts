@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { upload } from '../utils/fileStorage';
+import { upload } from '../utils/file-storage';
 
 export const uploadFile = async (req: Request, res: Response) => {
   try {

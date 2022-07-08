@@ -7,7 +7,7 @@ import { config } from './config/config';
 import { handleError } from './utils/errors';
 import { connectDb } from './utils/db';
 import { pageNotFoundRouter } from './routers/page-not-found.router';
-import { uploadFileRouter } from './routers/uploadFile.router';
+import { uploadFileRouter } from './routers/upload-file.router';
 import { authRouter } from './routers/auth.router';
 import { userRouter } from './routers/user.router';
 

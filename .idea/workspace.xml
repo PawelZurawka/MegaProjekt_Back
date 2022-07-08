@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Add user router.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/post.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/post.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routers/post.router.ts" afterDir="false" />
+    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/controllers/upload.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/upload-file.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/uploadFile.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routers/upload-file.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/fileStorage/fileStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/fileStorage/file-storage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/fileStorage/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/fileStorage/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/fileStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file-storage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +141,7 @@
       <workItem from="1657212300322" duration="6206000" />
       <workItem from="1657220695839" duration="594000" />
       <workItem from="1657285228739" duration="12885000" />
-      <workItem from="1657299425499" duration="1062000" />
+      <workItem from="1657299425499" duration="1580000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -371,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657298044602</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Refactor post controller.">
+      <created>1657300596452</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1657300596452</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +399,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add post controller and rename router." />
     <MESSAGE value="Add post controller." />
     <MESSAGE value="Add cors origin." />
     <MESSAGE value="Add handle Error." />
@@ -414,7 +423,8 @@
     <MESSAGE value="Add authorization controller and router." />
     <MESSAGE value="Add user controller." />
     <MESSAGE value="Add user router." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user router." />
+    <MESSAGE value="Refactor post controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor post controller." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
