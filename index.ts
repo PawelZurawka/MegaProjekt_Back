@@ -1,4 +1,4 @@
-import express, { json } from 'express';
+import express, { json, Router } from 'express';
 import 'express-async-errors';
 import rateLimit from 'express-rate-limit';
 import { postRouter } from './routers/post.router';
@@ -8,8 +8,10 @@ import { handleError } from './utils/errors';
 import { connectDb } from './utils/db';
 import { pageNotFoundRouter } from './routers/page-not-found.router';
 import { uploadFileRouter } from './routers/uploadFile.router';
+import { authRouter } from './routers/auth.router';
 
 const app = express();
+const router = Router();
 
 app.use(
   cors({
@@ -28,8 +30,11 @@ app.use(
   })
 );
 
-app.use('/api/upload', uploadFileRouter);
-app.use('/api/posts', postRouter);
+router.use('/upload', uploadFileRouter);
+router.use('/posts', postRouter);
+router.use('/auth', authRouter);
+
+app.use('/api', router);
 
 app.use(pageNotFoundRouter);
 

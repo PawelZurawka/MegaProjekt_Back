@@ -5,7 +5,7 @@ const userSchema = new Schema<UserInterface>(
   {
     username: { type: String, required: true, unique: true, minlength: 3, maxlength: 50 },
     email: { type: String, required: true, unique: true, minlength: 5, maxlength: 50 },
-    password: { type: String, required: true, minlength: 4, maxlength: 24 },
+    password: { type: String, required: true, minlength: 4, maxlength: 100 },
     avatar: { type: String, default: '' },
   },
   { timestamps: true }
