@@ -1,4 +1,4 @@
 export * from './post';
 export * from './user';
 export * from './category';
-export * from './fileStorage';
+export * from './file-storage';
