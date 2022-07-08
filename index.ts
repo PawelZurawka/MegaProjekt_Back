@@ -3,11 +3,12 @@ import 'express-async-errors';
 import rateLimit from 'express-rate-limit';
 import { postRouter } from './routers/post.router';
 import cors from 'cors';
-const path = require("path");
+const path = require('path');
 import { config } from './config/config';
 import { handleError } from './utils/errors';
 import { connectDb } from './utils/db';
 import { pageNotFoundRouter } from './routers/page-not-found.router';
+import { uploadFileRouter } from './routers/uploadFile.router';
 
 const app = express();
 
@@ -18,7 +19,7 @@ app.use(
 );
 app.use(json());
 
-app.use("/images", express.static(path.join(__dirname, "/images")));
+app.use('/images', express.static(path.join(__dirname, '/images')));
 
 app.use(
   rateLimit({
@@ -27,6 +28,7 @@ app.use(
   })
 );
 
+app.use('/api/upload', uploadFileRouter);
 app.use('/api/posts', postRouter);
 
 app.use(pageNotFoundRouter);
