@@ -10,6 +10,7 @@ import { pageNotFoundRouter } from './routers/page-not-found.router';
 import { uploadFileRouter } from './routers/upload-file.router';
 import { authRouter } from './routers/auth.router';
 import { userRouter } from './routers/user.router';
+import { categoryRouter } from './routers/category.router';
 
 const app = express();
 const router = Router();
@@ -35,6 +36,7 @@ router.use('/upload', uploadFileRouter);
 router.use('/posts', postRouter);
 router.use('/auth', authRouter);
 router.use('/users', userRouter);
+router.use('/categories', categoryRouter);
 
 app.use('/api', router);
 
