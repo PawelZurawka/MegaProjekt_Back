@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Add category router and controller.">
+    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Fix problem with multer.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/upload-file.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/upload-file.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/upload-file.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/upload-file.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routers/upload-file.router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/file-storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file-storage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +139,8 @@
       <workItem from="1657212300322" duration="6206000" />
       <workItem from="1657220695839" duration="594000" />
       <workItem from="1657285228739" duration="12885000" />
-      <workItem from="1657299425499" duration="5048000" />
+      <workItem from="1657299425499" duration="6268000" />
+      <workItem from="1657478005288" duration="2152000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -400,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657302698579</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Fix problem with multer.">
+      <created>1657304543959</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1657304543959</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +426,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add handle Error." />
     <MESSAGE value="Rename controller and add model." />
     <MESSAGE value="Add types, model and schema." />
     <MESSAGE value="Add runDb and first route." />
@@ -443,7 +450,8 @@
     <MESSAGE value="Refactor post controller." />
     <MESSAGE value="Rename some files and directories." />
     <MESSAGE value="Add category router and controller." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add category router and controller." />
+    <MESSAGE value="Fix problem with multer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix problem with multer." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
