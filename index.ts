@@ -1,12 +1,11 @@
 import express, { json, Router } from 'express';
 import 'express-async-errors';
 import rateLimit from 'express-rate-limit';
-import { postRouter } from './routers/post.router';
 import cors from 'cors';
+import { postRouter } from './routers/post.router';
 import { config } from './config/config';
 import { handleError } from './utils/errors';
 import { connectDb } from './utils/db';
-import { pageNotFoundRouter } from './routers/page-not-found.router';
 import { uploadFileRouter } from './routers/upload-file.router';
 import { authRouter } from './routers/auth.router';
 import { userRouter } from './routers/user.router';
@@ -22,8 +21,7 @@ app.use(
 );
 app.use(json());
 
-// app.use(express.static('public'));
-// app.use('public/images', express.static(path.join(__dirname, 'public/images')));
+app.use(express.static('public'));
 
 app.use(
   rateLimit({
@@ -39,8 +37,6 @@ router.use('/users', userRouter);
 router.use('/categories', categoryRouter);
 
 app.use('/api', router);
-
-app.use(pageNotFoundRouter);
 
 app.use(connectDb);
 
