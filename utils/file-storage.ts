@@ -8,8 +8,7 @@ const fileStorage = multer.diskStorage({
   },
 
   filename: (req: Request, file: Express.Multer.File, callback: FileNameCallback): void => {
-    // callback(null, req.body.name);
-    callback(null, 'test.jpeg');
+    callback(null, req.body.name);
   },
 });
 
