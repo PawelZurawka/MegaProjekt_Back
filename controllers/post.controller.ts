@@ -16,15 +16,15 @@ export const getAllPosts = async (req: Request, res: Response) => {
   try {
     let posts;
     if (username) {
-      posts = await Post.find({ username });
+      posts = await Post.find({ username }).sort({ createdAt: 'desc' });
     } else if (categoryName) {
       posts = await Post.find({
         categories: {
           $in: [categoryName],
         },
-      });
+      }).sort({ createdAt: 'desc' });
     } else {
-      posts = await Post.find();
+      posts = await Post.find().sort({ createdAt: 'desc' });
     }
     res.status(200).json(posts);
   } catch (err) {
