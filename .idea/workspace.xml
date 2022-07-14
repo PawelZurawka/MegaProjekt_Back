@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/post.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/post.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/user/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/user/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +144,7 @@
       <workItem from="1657654538637" duration="1739000" />
       <workItem from="1657658760423" duration="215000" />
       <workItem from="1657697691556" duration="16159000" />
-      <workItem from="1657782509670" duration="511000" />
+      <workItem from="1657782509670" duration="1431000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -461,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657739447986</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Change post schema.">
+      <created>1657783070282</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1657783070282</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Edit deletePost controller.Add min and max length to schema." />
     <MESSAGE value="Add extends document in interface." />
     <MESSAGE value="Change tsconfig." />
     <MESSAGE value="Change error codes." />
@@ -504,7 +510,8 @@
     <MESSAGE value="Add unique to category name schema." />
     <MESSAGE value="Change file storage target file name." />
     <MESSAGE value="Remove 404 page not found." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove 404 page not found." />
+    <MESSAGE value="Change post schema." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change post schema." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
