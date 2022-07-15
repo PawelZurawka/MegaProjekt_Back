@@ -25,14 +25,14 @@ export const registerUser = async (req: Request, res: Response) => {
 export const loginUser = async (req: Request, res: Response) => {
   try {
     const user = await User.findOne({ username: req.body.username });
-    !user && res.status(400).json('Wrong credentials!');
-
     const validated = await compare(req.body.password, user.password);
+
+    !user && res.status(400).json('Wrong credentials!');
     !validated && res.status(400).json('Wrong credentials!');
 
     const { password, ...rest } = user.toObject();
     res.status(200).json(rest);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 };

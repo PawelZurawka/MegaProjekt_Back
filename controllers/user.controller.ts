@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { hash, genSalt } from 'bcrypt';
 import { User } from '../models/user.model';
-import { Post } from '../models/post.model';
+// import { Post } from '../models/post.model';
 
 export const getUser = async (req: Request, res: Response) => {
   try {
@@ -39,9 +39,10 @@ export const updateUser = async (req: Request, res: Response) => {
 export const deleteUser = async (req: Request, res: Response) => {
   if (req.body.userId === req.params.id) {
     try {
-      const user = await User.findById(req.params.id);
+      // const user = await User.findById(req.params.id);
+      await User.findById(req.params.id);
       try {
-        await Post.deleteMany({ username: user.username });
+        // await Post.deleteMany({ username: user.username });
         await User.findByIdAndDelete(req.params.id);
         res.status(200).json('User has been deleted.');
       } catch (err) {

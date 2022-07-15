@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Change user schema.">
+    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Delete deleteMany posts from user controller.">
+      <change afterPath="$PROJECT_DIR$/public/images/1657808920618post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1657808940728post7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1657809138169post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1657818137983profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1657880700230contact.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1657882091746about.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/post.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1657796363219avatar2.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +152,9 @@
       <workItem from="1657654538637" duration="1739000" />
       <workItem from="1657658760423" duration="215000" />
       <workItem from="1657697691556" duration="16159000" />
-      <workItem from="1657782509670" duration="6867000" />
+      <workItem from="1657782509670" duration="13551000" />
+      <workItem from="1657872288106" duration="169000" />
+      <workItem from="1657872538379" duration="1558000" />
     </task>
     <task id="LOCAL-00001" summary="Reset whole project.">
       <created>1656599086425</created>
@@ -476,7 +485,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657784212039</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Add post sorting by date.">
+      <created>1657802160710</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1657802160710</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Delete some files.">
+      <created>1657802210740</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1657802210740</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,9 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change tsconfig." />
-    <MESSAGE value="Change error codes." />
-    <MESSAGE value="Add error messages." />
     <MESSAGE value="Add page-not-found-router." />
     <MESSAGE value="Add multer package.Remove uuid package." />
     <MESSAGE value="Change server config, post router. Add images folder." />
@@ -519,7 +539,10 @@
     <MESSAGE value="Remove 404 page not found." />
     <MESSAGE value="Change post schema." />
     <MESSAGE value="Change user schema." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change user schema." />
+    <MESSAGE value="Add post sorting by date." />
+    <MESSAGE value="Delete some files." />
+    <MESSAGE value="Delete deleteMany posts from user controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete deleteMany posts from user controller." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
