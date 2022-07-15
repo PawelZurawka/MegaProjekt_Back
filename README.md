@@ -32,6 +32,7 @@ Również z powyższego powodu apka ma wiele bolączek i niedoróbek, ale najpie
 - proste logowanie i rejestracja.
 - edytowanie użytkownika.
 - kasowanie użytkownika.
+- zdjęcia dodane do postu wysyłane są na BE.
 
 Czego nie zdążyłem zrobić oraz wady aplikacji (wszystko przez brak czasu, o którym wyżej pisałem):
 - brak RWD, a że nie lubię podejścia mobile first, to zacząłem od wersji desktopowej.
