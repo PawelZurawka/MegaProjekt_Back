@@ -21,8 +21,6 @@ app.use(
 );
 app.use(json());
 
-app.use(express.static('public'));
-
 app.use(
   rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
@@ -37,6 +35,8 @@ router.use('/users', userRouter);
 router.use('/categories', categoryRouter);
 
 app.use('/api', router);
+
+app.use(express.static('public'));
 
 app.use(connectDb);
 
