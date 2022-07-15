@@ -5,11 +5,12 @@ import cors from 'cors';
 import { postRouter } from './routers/post.router';
 import { config } from './config/config';
 import { handleError } from './utils/errors';
-import { connectDb } from './utils/db';
+// import { connectDb } from './utils/db';
 import { uploadFileRouter } from './routers/upload-file.router';
 import { authRouter } from './routers/auth.router';
 import { userRouter } from './routers/user.router';
 import { categoryRouter } from './routers/category.router';
+import mongoose from 'mongoose';
 
 const app = express();
 const router = Router();
@@ -20,6 +21,10 @@ app.use(
   })
 );
 app.use(json());
+
+app.use(express.static('public'));
+
+mongoose.connect(config.mongo.url).then(r => r);
 
 app.use(
   rateLimit({
@@ -36,9 +41,7 @@ router.use('/categories', categoryRouter);
 
 app.use('/api', router);
 
-app.use(connectDb);
-
-app.use(express.static('public'));
+// app.use(connectDb);
 
 app.use(handleError);
 

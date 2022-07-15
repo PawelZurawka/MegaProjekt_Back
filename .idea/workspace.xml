@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,14 +148,7 @@
       <workItem from="1657782509670" duration="13551000" />
       <workItem from="1657872288106" duration="169000" />
       <workItem from="1657872538379" duration="4630000" />
-      <workItem from="1657904050581" duration="2388000" />
-    </task>
-    <task id="LOCAL-00004" summary="Change in prettier config file.">
-      <created>1656609612046</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1656609612046</updated>
+      <workItem from="1657904050581" duration="2965000" />
     </task>
     <task id="LOCAL-00005" summary="Add config file to gitignore.">
       <created>1656880647908</created>
@@ -491,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657906352085</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Try to fix problem with map in front.">
+      <created>1657906746915</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1657906746915</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
