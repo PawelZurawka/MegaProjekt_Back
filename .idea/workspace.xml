@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Delete deleteMany posts from user controller.">
-      <change afterPath="$PROJECT_DIR$/public/images/1657808920618post.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1657808940728post7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1657809138169post.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1657818137983profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1657880700230contact.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1657882091746about.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1657796363219avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1657783250991post2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1657783250991post2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1657880700230contact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1657882091746about.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,14 +148,7 @@
       <workItem from="1657697691556" duration="16159000" />
       <workItem from="1657782509670" duration="13551000" />
       <workItem from="1657872288106" duration="169000" />
-      <workItem from="1657872538379" duration="1558000" />
-    </task>
-    <task id="LOCAL-00001" summary="Reset whole project.">
-      <created>1656599086425</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1656599086425</updated>
+      <workItem from="1657872538379" duration="4328000" />
     </task>
     <task id="LOCAL-00002" summary="Add scripts and dependencies to package.json, gitignore, README and prettier config file.">
       <created>1656599410937</created>
@@ -499,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657802210740</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Delete deleteMany posts from user controller.">
+      <created>1657882570367</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1657882570368</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
