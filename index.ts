@@ -10,6 +10,7 @@ import { uploadFileRouter } from './routers/upload-file.router';
 import { authRouter } from './routers/auth.router';
 import { userRouter } from './routers/user.router';
 import { categoryRouter } from './routers/category.router';
+import path from 'path';
 
 const app = express();
 const router = Router();
@@ -21,7 +22,7 @@ app.use(
 );
 app.use(json());
 
-app.use(express.static('public'));
+app.use('*/images', express.static(path.join(__dirname, '/public/images')));
 
 app.use(
   rateLimit({
