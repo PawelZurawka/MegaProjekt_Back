@@ -36,9 +36,9 @@ router.use('/categories', categoryRouter);
 
 app.use('/api', router);
 
-app.use(express.static('public'));
-
 app.use(connectDb);
+
+app.use(express.static('public'));
 
 app.use(handleError);
 

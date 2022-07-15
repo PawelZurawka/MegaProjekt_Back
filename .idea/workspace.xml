@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Add photo.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,14 +146,7 @@
       <workItem from="1657782509670" duration="13551000" />
       <workItem from="1657872288106" duration="169000" />
       <workItem from="1657872538379" duration="4630000" />
-      <workItem from="1657904050581" duration="1980000" />
-    </task>
-    <task id="LOCAL-00003" summary="Add tsconfig file and first route for test server.">
-      <created>1656601000975</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1656601000976</updated>
+      <workItem from="1657904050581" duration="2388000" />
     </task>
     <task id="LOCAL-00004" summary="Change in prettier config file.">
       <created>1656609612046</created>
@@ -492,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657901943912</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Try to fix problem with map in front.">
+      <created>1657906352085</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1657906352085</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +509,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add multer package.Remove uuid package." />
     <MESSAGE value="Change server config, post router. Add images folder." />
     <MESSAGE value="Add user and category models and interfaces." />
     <MESSAGE value="Add types multer,upload file router, types and logic.." />
@@ -535,7 +533,8 @@
     <MESSAGE value="Delete some files." />
     <MESSAGE value="Delete deleteMany posts from user controller." />
     <MESSAGE value="Add photo." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add photo." />
+    <MESSAGE value="Try to fix problem with map in front." />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to fix problem with map in front." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
