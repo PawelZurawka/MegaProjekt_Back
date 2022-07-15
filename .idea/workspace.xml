@@ -85,7 +85,17 @@
       <recent name="E:\DYSK D\Programowanie\MegaK\Projekt zaliczeniowy\MegaProjekt_Back" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start:dev">
+  <component name="RunManager" selected="npm.start (1)">
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
@@ -104,11 +114,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.start (1)" />
       <item itemvalue="npm.start:dev" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
@@ -148,14 +160,7 @@
       <workItem from="1657782509670" duration="13551000" />
       <workItem from="1657872288106" duration="169000" />
       <workItem from="1657872538379" duration="4630000" />
-      <workItem from="1657904050581" duration="2965000" />
-    </task>
-    <task id="LOCAL-00005" summary="Add config file to gitignore.">
-      <created>1656880647908</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1656880647908</updated>
+      <workItem from="1657904050581" duration="3800000" />
     </task>
     <task id="LOCAL-00006" summary="Add example config file.">
       <created>1656880714800</created>
@@ -493,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657906746915</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Try to fix problem with map in front.">
+      <created>1657907609350</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1657907609350</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
