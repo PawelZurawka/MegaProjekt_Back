@@ -1,8 +1,8 @@
 # Projekt zaliczeniowy MegaK - blogApp.
 Link do FE: [https://github.com/PawelZurawka/MegaProjekt_Front](https://github.com/PawelZurawka/MegaProjekt_Front)
 
-# Najszybszy sposób odpalenia aplikacji lokalnie, póki nie działa network manager.
-Ściągnąć sam BE. Zastąpić config.example.ts plikiem config.ts, który jest pod adresem: [LINK](https://drive.google.com/drive/folders/1C3E3nQTLDfNV024PvFsYDE1DwRIlZvuc?usp=sharing).<br> `yarn install` -> `yarn run start:dev`, następnie wejść na [https://blog.networkmanager.pl](https://blog.networkmanager.pl).
+# Najszybszy sposób odpalenia aplikacji lokalnie, póki nie działa Direct Admin na network manager.
+Ściągnąć sam BE. Zastąpić config.example.ts plikiem config.ts, który jest pod adresem: [LINK](https://drive.google.com/drive/folders/1C3E3nQTLDfNV024PvFsYDE1DwRIlZvuc?usp=sharing).<br> `yarn install` -> `yarn run start:dev`, następnie wejść na [https://blog.networkmanager.pl](https://blog.networkmanager.pl). Front wrzuciłem poprzez konsolę Bitvise, ale żeby zrobić build-a i restart BE potrzebny jest Direct Admin, który nie działa.
 
 ## Demo
 Jeżeli networkmanager zacznie działać to apka będzie pod adresem:<br> [https://blog.networkmanager.pl](https://blog.networkmanager.pl)<br>
