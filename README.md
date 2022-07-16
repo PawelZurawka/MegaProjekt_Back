@@ -1,5 +1,8 @@
 # Projekt zaliczeniowy MegaK - blogApp.
-Linko do FE: [https://github.com/PawelZurawka/MegaProjekt_Front](https://github.com/PawelZurawka/MegaProjekt_Front)
+Link do FE: [https://github.com/PawelZurawka/MegaProjekt_Front](https://github.com/PawelZurawka/MegaProjekt_Front)
+
+# Najszybszy sposób odpalenia aplikacji lokalnie, póki nie działa network manager.
+Ściągnąć sam BE. Zastąpić config.example.ts plikiem config.ts, który jest pod adresem: [LINK](https://drive.google.com/drive/folders/1C3E3nQTLDfNV024PvFsYDE1DwRIlZvuc?usp=sharing).<br> `yarn install` -> `yarn run start:dev`, następnie wejść na [https://blog.networkmanager.pl](https://blog.networkmanager.pl).
 
 ## Demo
 Jeżeli networkmanager zacznie działać to apka będzie pod adresem:<br> [https://blog.networkmanager.pl](https://blog.networkmanager.pl)<br>

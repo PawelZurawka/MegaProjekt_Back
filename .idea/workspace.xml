@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="Add readme.">
+    <list default="true" id="46c3884b-9c21-4730-b729-b1d3605056a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +173,8 @@
       <workItem from="1657904050581" duration="4250000" />
       <workItem from="1657911556541" duration="11214000" />
       <workItem from="1657923413234" duration="271000" />
-    </task>
-    <task id="LOCAL-00010" summary="Add cors origin.">
-      <created>1656940635617</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1656940635617</updated>
+      <workItem from="1657923910325" duration="97000" />
+      <workItem from="1657988322493" duration="164000" />
     </task>
     <task id="LOCAL-00011" summary="Add handle Error.">
       <created>1656942234137</created>
@@ -516,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657922477132</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Update readme.">
+      <created>1657923984943</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1657923984943</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add types multer,upload file router, types and logic.." />
     <MESSAGE value="Add types multer,upload file router, types and logic." />
     <MESSAGE value="Add authorization controller and router." />
     <MESSAGE value="Add user controller." />
@@ -559,7 +561,8 @@
     <MESSAGE value="Try to fix problem with map in front." />
     <MESSAGE value="Change path to static files." />
     <MESSAGE value="Add readme." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add readme." />
+    <MESSAGE value="Update readme." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
